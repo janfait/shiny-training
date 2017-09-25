@@ -10,7 +10,8 @@ shinyUI(fluidPage(
         selectInput("select1","Variable",choices = c("a","p"))
       ),
       mainPanel(
-        plotOutput("chart1")
+        plotOutput("chart1"),
+        tableOutput("table1")
       )
   )
 ))

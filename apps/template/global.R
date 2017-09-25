@@ -3,10 +3,6 @@
 ########################
 
 library(shiny)
-library(shinydashboard)
-library(shinyjs)
-library(dplyr)
-library(ggplot2)
 
 ########################
 # DEPENDENCIES

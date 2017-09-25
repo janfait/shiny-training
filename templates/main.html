@@ -4,14 +4,17 @@
   <head>
     {{ headContent() }}
     {{ bootstrapLib() }}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+  
   <body>
     {{ header }}
-    <div>
-      {{ input }}
+    <div class="container">
+       <div class="row">
+          <div class="col-sm-4">{{ input }}</div>
+          <div class="col-sm-8">{{ output }}</div>
+      </div>
     </div>
-    <div>
-      {{ output }}
-    </div>
+      {{ footer }}
   </body>
 </html>

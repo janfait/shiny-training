@@ -7,7 +7,10 @@ htmlTemplate(
     title = app$ui$title
   ),
   input = app$ui$input,
-  output = plotOutput("chart1_1")
+  output = plotOutput("chart1_1"),
+  footer = htmlTemplate(
+    filename = "../../templates/footer.html"
+  )
 )
 
 

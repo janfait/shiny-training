@@ -2,7 +2,6 @@
 # LIBRARIES
 ########################
 
-#load all libraries which are likely to get used
 library(shiny)
 
 ########################
@@ -13,7 +12,7 @@ library(shiny)
 # INITIALIZE
 ########################
 
-data <- readRDS("/data/data.rds")
+data <- read.table("data/data.csv",header=T,sep=",",nrows=1000)
 
 
 
