@@ -3,15 +3,6 @@
 ######################################################################################################
 function(session, input, output) {
 
-  #pass static or client data here so you can use them in conditional inputs
-  output$debug <- reactive({
-    app$mode$debug
-  })
-  #create the console output for debug of input values
-  output$console <- renderPrint(
-    reactiveValuesToList(input)
-  )
-  
   #use module to render chart by passing input values as parameters
   output$chart1_1  <- renderPlot({
     callModule(

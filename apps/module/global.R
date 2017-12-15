@@ -18,7 +18,7 @@ source("modules/module1.R")
 ########################
 
 #initialize the app with particular settings
-app <- myApp$new(title = "Modularizace", authenticate = FALSE, debug = TRUE)
+app <- myApp$new(title = "Modularizace",authenticate = FALSE, debug = TRUE)
 
 #define all inputs as part of the app module and use them in different places at will
 app$addInput(

@@ -8,7 +8,7 @@ function(session, input, output) {
   })
   
   output$table1  <- renderTable({
-    head(data,10)
+    head(data,input$slider1)
   })
  
 }
